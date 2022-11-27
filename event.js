@@ -29,7 +29,7 @@ const eventemitter = require('events');
 const event = new eventemitter;
 
 event.on('sleep',()=>{
-    console.log("sleeping..");
+    console.log(50+100);
 })
 event.on('code',()=>{
     console.log("codindg.....");
@@ -37,7 +37,7 @@ event.on('code',()=>{
 
 
 event.emit('sleep');
-event.emit('code');
+// event.emit('code');
 
 
 
